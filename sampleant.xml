@@ -5,7 +5,7 @@
 	<target name="compile" depends="clean">
 		<echo> Java Compile task </echo>
 		<mkdir dir="build/classes"/>
-		<javac srcdir="src" destdir="build/classes">
+		<javac srcdir="src" destdir="build/classes"></javac>
 	</target>
 	<target name="package" depends="compile">
 		<echo>Java package task</echo>
@@ -17,6 +17,6 @@
 	</target>
 	<target name="run" depends="package">
 		<echo> running jar file</echo>
-		<java jar="build/jar/helloworld.jar" fork="true">
+		<java jar="build/jar/helloworld.jar" fork="true"></java>
 	</target>
 </project>
